@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2025-05-30T14:00:00.000Z" agent="ChatGPT" version="20.1.7" type="device">
+  <diagram id="diagramIoTEmojis" name="Architecture IoT avec Emojis">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="600" math="0" shadow="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="🌡️ Capteurs
+(température, humidité,
+pression, etc.)" style="rounded=1;whiteSpace=wrap;fillColor=#1976D2;strokeColor=#0D47A1;strokeWidth=2;fontSize=14;fontColor=#E3F2FD;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="220" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="📡 Hubs
+(Microcontrôleurs
+BLE / LoRaWAN)" style="rounded=1;whiteSpace=wrap;fillColor=#FBC02D;strokeColor=#F9A825;strokeWidth=2;fontSize=14;fontColor=#212121;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="150" width="220" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="☁️ Serveur
+(API + Base de données)" style="rounded=1;whiteSpace=wrap;fillColor=#388E3C;strokeColor=#2E7D32;strokeWidth=2;fontSize=14;fontColor=#E8F5E9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="150" width="240" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#1976D2;curved=1;" edge="1" parent="1" source="2" target="3" value="🔗 BLE / LoRaWAN" labelPosition="center" align="center" verticalAlign="middle" fontColor="#444444" fontSize="12" fontStyle="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#388E3C;curved=1;" edge="1" parent="1" source="3" target="4" value="📤 MQTT" labelPosition="center" align="center" verticalAlign="middle" fontColor="#444444" fontSize="12" fontStyle="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
