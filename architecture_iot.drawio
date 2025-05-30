@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2025-05-30T12:00:00.000Z" agent="ChatGPT" version="20.1.7" type="device">
+  <diagram id="diagramIoT" name="Architecture IoT">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Capteurs
+(température, humidité,
+pression, etc.)" style="rounded=1;whiteSpace=wrap;fillColor=#A3D5FF;strokeColor=#1C4E80;strokeWidth=2;fontSize=12;fontColor=#0B2447;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Hubs
+(Microcontrôleurs
+BLE / LoRaWAN)" style="rounded=1;whiteSpace=wrap;fillColor=#FFD966;strokeColor=#B07A00;strokeWidth=2;fontSize=12;fontColor=#6B4F00;" vertex="1" parent="1">
+          <mxGeometry x="320" y="100" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Serveur
+(API + Base de données)" style="rounded=1;whiteSpace=wrap;fillColor=#C2F0C2;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;fontColor=#145214;" vertex="1" parent="1">
+          <mxGeometry x="680" y="100" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="BLE / LoRaWAN" style="rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=none;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="130" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="MQTT" style="rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=none;fontSize=11;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="520" y="130" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" style="endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" style="endArrow=block;endFill=1;strokeWidth=2;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
